@@ -1,4 +1,4 @@
-# Copyright (c) 2021 The ZMK Contributors
+# Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 # iNNER (with eByte E73-2G4M08S1C nrf52840 System-on-module) configuration
 
@@ -17,9 +17,6 @@ config USB_DEVICE_STACK
 
 endif # USB
 
-config I2C
-    default y
-
 config BT_CTLR
     default BT
 
@@ -31,5 +28,8 @@ config ZMK_USB
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
     default y
+
+config ZMK_KEYBOARD_NAME
+	default "iNNER"
 
 endif # BOARD_INNER

@@ -5,6 +5,6 @@ iNNER is a limited run 46% bluetooth keyboard originally made and sold by Sets3n
 
 ## Building iNNER ZMK firmware
 ```
-west build -p -b inner
+west build -p -d build/inner -b inner
 ```
 
